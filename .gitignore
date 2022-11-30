@@ -1,4 +1,4 @@
-.gradle
-.idea
-build
-src/**/*.txt
+/.gradle
+/build
+/inputs/*
+!/inputs/*_test.txt
