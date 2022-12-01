@@ -1,3 +1,7 @@
+package day01
+
+import utils.*
+
 fun main() {
     fun part1(input: List<String>): Int {
         return input.size
