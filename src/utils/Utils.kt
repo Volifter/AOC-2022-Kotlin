@@ -21,3 +21,28 @@ fun <T> expect(got: T, expected: T) {
 
     println("Assertion passed: $got == $got")
 }
+
+/**
+ * Computes the GCD of its arguments
+ */
+fun getGCD(vararg values: Int): Int =
+    values.toSet().fold(1) { left, right ->
+        var a = left
+        var b = right
+
+        while (a != b) {
+            if (a > b)
+                a -= b
+            else
+                b -= a
+        }
+
+        return@fold a
+    }
+
+/**
+ * Computes the LCM of its arguments
+ */
+fun getLCM(vararg values: Int): Int = values.toSet().fold(1) { a, b ->
+    maxOf(a, b) / getGCD(a, b) * minOf(a, b)
+}
