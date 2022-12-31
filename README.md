@@ -2,7 +2,7 @@
 
 Welcome to the Advent of Code[^aoc] Kotlin project created using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
 
-This repository will contain a list of solutions to daily challenges written in [Kotlin][kotlin].
+This repository contains a list of solutions to daily challenges written in [Kotlin][kotlin].
 
 
 [^aoc]:
